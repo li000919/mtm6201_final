@@ -1,0 +1,114 @@
+/* ------------cover bootstrap style------------ */
+:root {
+  /* change color-scheme */
+  --bs-primary: #1A3A5A;      
+  --bs-secondary: #f8f5f0; 
+  --bs-info: #CC4D1E;   
+
+  /* change font */
+  --bs-body-font-family: 'Instrument Sans', sans-serif;
+}
+
+/* ------------cover font style------------ */
+/* font family */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* font size for desktop and tablet */
+h1 {
+  font-size: 48px;
+  line-height: 68px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+  line-height: 24px; 
+}
+
+.notes {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/* font size for mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  body {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .semibold-m {
+    font-weight: 600;
+    line-height: 22px; 
+  }
+
+  .banner-text {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+}
+
+/* addtional css */
+.banner {
+  background-image: url('/images/mobile/homepage/weightlifting.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.lang-switch {
+  /* color: white; */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-toggler {
+  border: none;
+  color: white;
+}

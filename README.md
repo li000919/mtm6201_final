@@ -28,3 +28,10 @@
 7. **senior-health-group** – Source: [Flickr](https://www.flickr.com/photo.gne?id=52522196481)  
 8. **social-zone-senior-group** – Source: [Flickr](https://www.flickr.com/photos/yvelines/52522671925 )  
 9. **senior-banner** – Source: [Unsplash](https://unsplash.com/photos/two-women-and-man-walking-in-the-street-during-daytime-Y5VBtBgswLQ)  
+
+# Day 1
+## about the font&color custom
+
+It is required that we should use more than 1 css frameworks, so I choose Tailwind at first as it is well-knowed in both China and North America. Then I did a lot of research on "How can I custom my own color and font, how can i combine the two frameworks". I spend almost 2 hour on custom Tailwind, then I realized that the point is not Tailwind. I need to figure out how can I use bootstrap, so I did the research again and redo it.
+
+Now I have another issue: how can i custom the breakpoints. But I decide to finish my mobile version first and then think about this question.
