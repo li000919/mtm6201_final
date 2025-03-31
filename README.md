@@ -35,3 +35,7 @@
 It is required that we should use more than 1 css frameworks, so I choose Tailwind at first as it is well-knowed in both China and North America. Then I did a lot of research on "How can I custom my own color and font, how can i combine the two frameworks". I spend almost 2 hour on custom Tailwind, then I realized that the point is not Tailwind. I need to figure out how can I use bootstrap, so I did the research again and redo it.
 
 Now I have another issue: how can i custom the breakpoints. But I decide to finish my mobile version first and then think about this question.
+
+不要想太多，直接做
+
+设计师和程序员之间的前期沟通很重要
