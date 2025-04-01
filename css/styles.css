@@ -139,53 +139,9 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.banner-content {
-  position: relative;
-  z-index: 10;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 100%;
-}
-
-.banner-content h1 {
-  color: white;
-}
 
 /* ------------Navigation Styles------------ */
-/* Common navigation styles */
-.site-header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 1rem;
-}
-
-.navbar-brand img {
-  height: 30px;
-}
-
-  /* Language switch button */
-  .lang-switch {
-  color: white;
-  background: transparent;
-  border: none;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  text-decoration: none;
-}
-
-.lang-switch:hover {
-  color: var(--bs-info);
-  text-decoration: none;
-}
-
-/* Hamburger menu */
-.navbar-toggler {
-  border: none;
-}
-
+/* humberger menu */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -195,147 +151,29 @@ body {
   background-color: var(--bs-secondary);
 }
 
-.offcanvas-header {
-  padding: 1rem;
-}
-
-.offcanvas-body {
-  padding: 0 1rem;
-}
-
-.navbar-nav {
-  width: 100%;
-}
-
-.nav-item {
-  border-left: 3px solid transparent;
-  padding: 0.75rem 1rem;
-}
-
 .nav-item.active {
-  border-left: 3px solid var(--bs-info);
-}
-
-.nav-link {
-  color: var(--bs-primary);
-  font-weight: 500;
-  padding: 0;
+  border-left: var(--bs-info);
 }
 
 .nav-link.active {
   color: var(--bs-info);
 }
 
-.nested-item {
-  padding-left: 2rem;
-}
-
-.nav-divider {
-  border-left: 3px solid transparent;
-  margin: 0.5rem 0;
-  border-bottom: 1px solid rgba(26, 58, 90, 0.1);
-}
-
-/* schedule container style */
+/* ------------schedule container style------------ */
 .text-info {
   color: var(--bs-info) !important;
 }
 
-.date-selector {
-  border: 1px solid #dee2e6;
-  background-color: white;
-  font-weight: 500;
-  padding: 8px 20px;
+.text-info-bg {
+  background-color: var(--bs-info) !important;
 }
 
-.search-box input {
-  border-radius: 30px;
-  padding: 8px 15px;
-  width: 200px;
-}
-
-.week-selector {
-  margin-top: 30px;
-}
-
-.day-label {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.day-number {
-  font-size: 18px;
-  font-weight: 500;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.day-number.active {
-  background-color: var(--bs-info);
-  color: white;
-}
-
-.schedule-header-row {
-  padding-bottom: 10px;
-}
-
-.schedule-item {
-  display: flex;
-  margin-bottom: 25px;
-}
-
-.time-slot {
-  width: 25%;
-  color: #666;
-}
-
-.time {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.class-name {
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.location {
-  color: #666;
-  font-size: 14px;
-}
-
-/* Add spacing between banner and schedule section */
+/* Add spacing between each section */
 .container {
   margin-top: 96px !important;
 }
 
-/* facility section */
-.container-custom {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  max-width: 100%;
-}
-
-.facility-card {
-  border-radius: 20px;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.pool-card {
-  background-color: #f0f8ff;
-}
-
+/* ------------facility section------------ */
 .ice-rink-card {
   background-color: #fff5f0;
 }
@@ -344,24 +182,12 @@ body {
   background-color: #fffff0;
 }
 
-.fitness-card {
+.fitness-card, .pool-card {
   background-color: #f0f8ff;
 }
 
-.facility-image {
-  border-radius: 0 0 20px 20px;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 1rem;
-}
 
-.facility-image img {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
-}
-
-.carousel-control-prev, .carousel-control-next {
+/* .carousel-control-prev, .carousel-control-next {
   width: auto;
   opacity: 1;
   top: -55px;
@@ -377,18 +203,11 @@ body {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: #333;
+  background-color: var(--bs-primary);
   border-radius: 50%;
   padding: 1rem;
-}
+} */
 
-.main-title {
-  margin-bottom: 5rem;
-}
-
-.main-title span {
-  color: var(--bs-info);
-}
 
 
 
