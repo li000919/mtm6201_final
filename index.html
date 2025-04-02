@@ -133,10 +133,6 @@
           </div>
     </section>
 
-   
-
-    
-
     <!------------- Schedule section ------------->
     <div class="container mt-5">
         <div class="row">
@@ -146,8 +142,9 @@
                         <h1 class="mb-3"><span class="fw-semibold">Your</span> <span class="text-info">All-in-One Schedule</span> <span class="fw-semibold">at a Glance</span></h1>
                         <button class="btn primary-mobile-btn">Book Now</button>
                     </div>
-                    
-                    <div class="schedule-filter mt-4 d-flex justify-content-between align-items-center">
+
+                    <!-- Calendar img&content for mobile-->
+                    <div class="schedule-filter mt-4 d-flex justify-content-between align-items-center d-lg-none">
                         <div class="dropdown">
                             <button class="btn dropdown-toggle border rounded bg-white fw-medium px-4 py-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                 2025.03
@@ -164,7 +161,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-5">
+                    <div class="mt-4 d-lg-none">
                         <div class="d-flex justify-content-between text-center">
                             <div>
                                 <div class="text-secondary fs-6 mb-1">Sun</div>
@@ -197,8 +194,8 @@
                         </div>
                     </div>
 
-                    <div class="mt-4">
-                        <div class="d-flex mb-3 pb-2">
+                    <div class="mt-4 d-lg-none">
+                        <div class="d-flex pb-2">
                             <div class="col-3 text-start">
                                 <p class="fw-bold semibold">Time</p>
                             </div>
@@ -254,6 +251,15 @@
                                 <div class="text-secondary fs-6">Fitness Studio A</div>
                             </div>
                         </div>
+                    </div>
+
+                     <!-- Calendar for desktop&tablet-->
+                     <div class="col-12">
+                        <!-- Desktop image (default) -->
+                        <img src="./images/desktop/homepage/schedule.png" alt="Schedule Calendar" class="img-fluid w-100 d-none d-lg-block">
+                        
+                        <!-- Tablet image -->
+                        <img src="./images/tablet/homepage/schedule.png" alt="Schedule Calendar" class="img-fluid w-100 d-none d-lg-none">
                     </div>
                 </div>
             </div>
