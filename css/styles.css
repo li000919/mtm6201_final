@@ -17,7 +17,7 @@
 
 /* ------------font style for mobile------------ */
 /* font family */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -197,8 +197,8 @@ body {
 
     
 /* ------------------------responsive------------------------ */
- /* ------------font size for desktop and tablet------------ */
-@media (min-width: 1024px) {
+ /* ------------font size&btn styles for desktop and tablet------------ */
+@media (min-width: 992px) {
   h1 {
     font-size: 48px;
     line-height: 68px;
@@ -298,5 +298,25 @@ body {
   .secondary-btn:visited {
     border: 4px solid var(--bs-info);
     color: var(--bs-info);
+  }
+
+  .menu-bg {
+    background-color: var(--bs-secondary);
+  }
+}
+
+ /* ------------styles for tablet------------ */
+@media (min-width: 992px) {
+  .banner-section {
+    background-image: url('/images/tablet/homepage/weightlifting.png');
+    height: 659px;
+  }
+}
+
+/* ------------styles for desktop------------ */
+@media (min-width: 1200px) {
+  .banner-section {
+    background-image: url('/images/desktop/homepage/weightlifting.png');
+    height: 973px; 
   }
 }

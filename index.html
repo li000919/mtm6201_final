@@ -25,7 +25,8 @@
         <div class="container-fluid d-flex justify-content-between align-items-center">
         <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre">
+                <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre" class="d-lg-none">
+                <img src="./images/tablet/homepage/logo.svg" alt="Active Life Centre" class="d-none d-lg-block">
             </a>
         
         <!-- Navigation for Mobile -->
@@ -38,48 +39,74 @@
             </div>
 
         <!-- Offcanvas Menu (Mobile) -->
-        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" 
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header p-3">
-            <a class="navbar-brand" href="#">
-                <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre">
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header p-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0 px-3">
+                    <button class="btn primary-mobile-btn w-100 mb-3">Sign in</button>
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                            <a class="nav-link fw-500 p-0" href="#">Home</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                            <a class="nav-link fw-500 p-0" href="#">Facilities</a>
+                        </li>
+                        <li class="nav-item active border-start border-3 py-3 px-3">
+                            <a class="nav-link active text-info fw-500 p-0" href="#">Programs</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                            <a class="nav-link fw-500 p-0" href="#">Fitness classes</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                            <a class="nav-link fw-500 p-0" href="#">Kids&Families</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                            <a class="nav-link fw-500 p-0" href="#">Senior Zone</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                            <a class="nav-link fw-500 p-0" href="#">Membership</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                            <a class="nav-link fw-500 p-0" href="#">About</a>
+                        </li>
+                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                            <a class="nav-link fw-500 p-0" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="offcanvas-body p-0 px-3">
-            <button class="btn primary-mobile-btn w-100 mb-3">Sign in</button>
-            <ul class="navbar-nav w-100">
-                <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                    <a class="nav-link fw-500 p-0" href="#">Home</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                    <a class="nav-link fw-500 p-0" href="#">Facilities</a>
-                </li>
-                <li class="nav-item active border-start border-3 py-3 px-3">
-                    <a class="nav-link active text-info fw-500 p-0" href="#">Programs</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                    <a class="nav-link fw-500 p-0" href="#">Fitness classes</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                    <a class="nav-link fw-500 p-0" href="#">Kids&Families</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                    <a class="nav-link fw-500 p-0" href="#">Senior Zone</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                    <a class="nav-link fw-500 p-0" href="#">Membership</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                    <a class="nav-link fw-500 p-0" href="#">About</a>
-                </li>
-                <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                    <a class="nav-link fw-500 p-0" href="#">Blog</a>
-                </li>
-            </ul>
-            </div>
+
+            <!-- Navigation for desktop&tablet -->
+            <nav class="menu-bg rounded-pill px-4 py-2 d-none d-lg-block">
+                <ul class="nav">
+                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">FACILITIES</a></li>
+                  <!-- program dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link fw-bold px-3 dropdown-toggle" href="#" id="programsDropdown" role="button" 
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                      PROGRAMS
+                    </a>
+                    <ul class="dropdown-menu rounded-4 border-0 shadow-lg p-2" aria-labelledby="programsDropdown">
+                      <li><a class="dropdown-item rounded-3 py-2" href="#">Fitness classes</a></li>
+                      <li><a class="dropdown-item rounded-3 py-2" href="#">Kids & Families</a></li>
+                      <li><a class="dropdown-item rounded-3 py-2" href="#">Senior Zone</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">MEMBERSHIP</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">VLOG</a></li>
+                </ul>
+            </nav>
+
         </div>
-        </div>
+
+        
     </header>
     <!-- Banner img&content -->
     <section class="banner-section d-flex align-items-center w-100">
@@ -154,10 +181,10 @@
                     <div class="mt-4">
                         <div class="d-flex mb-3 pb-2">
                             <div class="col-3 text-start">
-                                <h6 class="fw-bold">Time</h6>
+                                <p class="fw-bold semibold">Time</p>
                             </div>
                             <div class="col-9 text-start">
-                                <h6 class="fw-bold">Schedules</h6>
+                                <p class="fw-bold semibold">Schedules</p>
                             </div>
                         </div>
                         
@@ -407,7 +434,7 @@
         <!-- Newsletter Section -->
         <div class="row mb-5">
           <div class="col-md-8 col-lg-6">
-            <p class="semibold-m mt-3 mb-3">Join Our Fitness Community - Tips, insights, and exclusive perks straight to your inbox!</p>
+            <p class="semibold mt-3 mb-3">Join Our Fitness Community - Tips, insights, and exclusive perks straight to your inbox!</p>
             <div class="d-flex mb-3 gap-2">
               <input type="email" class="form-control rounded-5" placeholder="Email">
               <button class="secondary-mobile-btn wv-100" type="button">Subscribe</button>
@@ -419,7 +446,7 @@
         <div class="row">
           <!-- Left Column - Nav Links -->
           <div class="col-md-4">
-            <h class="semibold-m mb-3">Active Life Centre</p>
+            <h class="semibold mb-3">Active Life Centre</p>
             <ul class="nav flex-column">
               <li><a href="#" class="nav-link px-0 text-dark fw-normal">HOME</a></li>
               <li><a href="#" class="nav-link px-0 text-dark fw-normal">FACILITIES</a></li>
