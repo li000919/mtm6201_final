@@ -30,13 +30,13 @@
             </a>
         
         <!-- Navigation for Mobile -->
-            <div class="d-flex align-items-center d-md-none">
+            <nav class="d-flex align-items-center d-lg-none">
                 <a href="#" class="text-white bg-transparent border-0 fw-500 text-decoration-none px-2 me-3">Français</a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" 
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+            </nav>
 
         <!-- Offcanvas Menu (Mobile) -->
             <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -80,43 +80,62 @@
                 </div>
             </div>
 
-            <!-- Navigation for desktop&tablet -->
-            <nav class="menu-bg rounded-pill px-4 py-2 d-none d-lg-block">
+        <!-- Navigation for desktop&tablet -->
+            <nav class="menu-bg rounded-pill px-1 py-1 d-none d-lg-block">
                 <ul class="nav">
-                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">FACILITIES</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">FACILITIES</a></li>
                   <!-- program dropdown -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link fw-bold px-3 dropdown-toggle" href="#" id="programsDropdown" role="button" 
+                    <a class="nav-link fw-bold dropdown-toggle nav-custom px-1.5" href="#" id="programsDropdown" role="button" 
                        data-bs-toggle="dropdown" aria-expanded="false">
                       PROGRAMS
                     </a>
                     <ul class="dropdown-menu rounded-4 border-0 shadow-lg p-2" aria-labelledby="programsDropdown">
-                      <li><a class="dropdown-item rounded-3 py-2" href="#">Fitness classes</a></li>
-                      <li><a class="dropdown-item rounded-3 py-2" href="#">Kids & Families</a></li>
-                      <li><a class="dropdown-item rounded-3 py-2" href="#">Senior Zone</a></li>
+                      <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Fitness classes</a></li>
+                      <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Kids & Families</a></li>
+                      <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Senior Zone</a></li>
                     </ul>
                   </li>
 
-                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">MEMBERSHIP</a></li>
-                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">ABOUT</a></li>
-                  <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">VLOG</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">MEMBERSHIP</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">VLOG</a></li>
                 </ul>
             </nav>
 
-        </div>
-
-        
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="#" class="text-white text-decoration-none me-3">Français</a>
+                <a href="#" class="btn btn-light rounded-pill px-4 py-2 nav-custom">Log in</a>
+            </div>
+        </div>        
     </header>
-    <!-- Banner img&content -->
+
+    <!-- Banner img&content-->
     <section class="banner-section d-flex align-items-center w-100">
-        <div class="container-fluid px-4 position-relative z-2 banner-content">
+        <!-- mobile -->
+        <div class="container-fluid px-4 position-relative z-2 banner-content d-lg-none">
             <h1 class="text-white">Stay Active, Stay</h1>
             <h1 class="text-white">Connected</h1>
             <h1 class="text-white">Join a Class Today!</h1>
             <button class="primary-mobile-btn mt-4">Book Now</button>
         </div>
+         <!-- tablet&desktop -->
+         <div class="container-fluid px-5 position-relative z-2 d-none d-lg-block">
+            <div class="row">
+              <div class="col-lg-7">
+                <h1 class="text-white">Stay Active,</h1>
+                <h1 class="text-white">Stay Connected</h1>
+                <h1 class="text-white">Join a Class Today!</h1>
+                <button class="primary-mobile-btn mt-4">Book Now</button>
+              </div>
+            </div>
+          </div>
     </section>
+
+   
+
+    
 
     <!------------- Schedule section ------------->
     <div class="container mt-5">

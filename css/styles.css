@@ -303,6 +303,15 @@ body {
   .menu-bg {
     background-color: var(--bs-secondary);
   }
+
+  .nav-custom {
+    color: var(--bs-primary);
+  }
+
+  .nav-custom:hover {
+    color: var(--bs-info);
+    background-color: var(--bs-secondary);
+  }
 }
 
  /* ------------styles for tablet------------ */
@@ -316,7 +325,7 @@ body {
 /* ------------styles for desktop------------ */
 @media (min-width: 1200px) {
   .banner-section {
-    background-image: url('/images/desktop/homepage/weightlifting.png');
+    background-image: url('/images/desktop/homepage/weightlifting-1728x973.jpg');
     height: 973px; 
   }
 }
