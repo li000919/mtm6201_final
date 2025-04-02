@@ -36,6 +36,8 @@ It is required that we should use more than 1 css frameworks, so I choose Tailwi
 
 Now I have another issue: how can i custom the breakpoints. But I decide to finish my mobile version first and then think about this question.
 
-不要想太多，直接做
+不要想太多，直接做；先做一坨屎再改再优化，如果遇到一个问题专注于解决这个问题的话可能会浪费很多时间
 
 设计师和程序员之间的前期沟通很重要
+
+做设计的时候要注意Margin padding一致性
