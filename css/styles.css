@@ -96,6 +96,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 16px; 
+  width: max-content;
   /* layout */
   display: inline-flex;
   height: 39px;
@@ -173,7 +174,7 @@ body {
   margin-top: 96px !important;
 }
 
-/* ------------facility section------------ */
+/* ------------facility section&inclusive------------ */
 .ice-rink-card {
   background-color: #fff5f0;
 }
@@ -312,14 +313,24 @@ body {
     color: var(--bs-info);
     background-color: var(--bs-secondary);
   }
-}
 
- /* ------------styles for tablet------------ */
-@media (min-width: 992px) {
   .banner-section {
     background-image: url('/images/tablet/homepage/weightlifting.png');
     height: 659px;
   }
+
+  .inclusive-kids {
+  background-color: #fff5f0;
+  }
+
+  .inclusive-fitness {
+  background-color: #fffff0;
+  }
+
+  .pool-card, .inclusive-senior {
+  background-color: #f0f8ff;
+  }
+
 }
 
 /* ------------styles for desktop------------ */
