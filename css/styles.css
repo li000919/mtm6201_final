@@ -75,14 +75,21 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.primary-btn:hover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #CC4D1E;
-}
-
 .primary-btn:visited {
   border: 4px solid var(--bs-primary);
   background: var(--bs-info);
 }
+
+.primary-btn:focus {
+  border: 6px solid var(--bs-primary);
+  background: var(--bs-info);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #CC4D1E;
+}
+
+
 
 .secondary-btn {
   background-color: var(--bs-secondary);
@@ -108,14 +115,20 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.secondary-btn:hover {
-  border: 4px solid var(--bs-primary);
-}
-
 .secondary-btn:visited {
   border: 4px solid var(--bs-info);
   color: var(--bs-info);
 }
+
+.secondary-btn:visited {
+  border: 6px solid var(--bs-info);
+  color: var(--bs-info);
+}
+
+.secondary-btn:hover {
+  border: 4px solid var(--bs-primary);
+}
+
 
  /* ------------Banner Styles------------ */
 .banner-section {
