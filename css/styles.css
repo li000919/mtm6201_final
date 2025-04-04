@@ -129,7 +129,7 @@ body {
 
  /* ------------Banner Styles------------ */
 .banner-section {
-  background-image: url('./images/mobile/homepage/weightlifting.png');
+  background-image: url('../images/mobile/homepage/weightlifting.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,7 +325,7 @@ body {
   }
 
   .banner-section {
-    background-image: url('./images/tablet/homepage/weightlifting.png');
+    background-image: url('../images/tablet/homepage/weightlifting.png');
     height: 659px;
   }
 
@@ -346,7 +346,7 @@ body {
 /* ------------styles for desktop------------ */
 @media (min-width: 1200px) {
   .banner-section {
-    background-image: url('./images/desktop/homepage/weightlifting-1728x973.jpg');
+    background-image: url('../images/desktop/homepage/weightlifting-1728x973.jpg');
     height: 973px; 
   }
 }
