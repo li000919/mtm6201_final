@@ -28,496 +28,504 @@
 </head>
 
 <body>
-    <!------------ Header with Navigation ------------>
-    <header class="position-absolute w-100 top-0 start-0 z-3 p-3">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre"
-                    class="d-lg-none">
-                <img src="./images/tablet/homepage/logo.svg" alt="Active Life Centre" class="d-none d-lg-block">
-            </a>
+    <a class="visually-hidden-focusable bg-white text-dark text-decoration-none p-3 position-absolute start-50 translate-middle-x z-3 rounded shadow-sm" href="#main-content">
+        Skip to main content
+      </a>
 
-            <!-- Navigation for Mobile -->
-            <nav class="d-flex align-items-center d-lg-none">
-                <a href="#"
-                    class="text-white bg-transparent border-0 fw-500 text-decoration-none px-2 me-3">Français</a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-
-            <!-- Offcanvas Menu (Mobile) -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header p-3">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre">
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <header>
+        <!------------ Header with Navigation ------------>   
+        <nav role="navigation" class="position-absolute w-100 top-0 start-0 z-3 p-3">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre"
+                        class="d-lg-none">
+                    <img src="./images/tablet/homepage/logo.svg" alt="Active Life Centre" class="d-none d-lg-block">
+                </a>
+    
+                <!-- Navigation for Mobile -->
+                <nav class="d-flex align-items-center d-lg-none">
+                    <a href="#"
+                        class="text-white bg-transparent border-0 fw-500 text-decoration-none px-2 me-3">Français</a>
+                    <button class="navbar-toggler border-0" role="button" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+    
+                <!-- Offcanvas Menu (Mobile) -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header p-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/mobile/homepage/logo-active-life-centre.svg" alt="Active Life Centre">
+                        </a>
+                        <button type="button" role="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0 px-3">
+                        <button class="btn primary-btn w-100 mb-3">Sign in</button>
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                                <a class="nav-link fw-500 p-0" href="#">Home</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                                <a class="nav-link fw-500 p-0" href="#">Facilities</a>
+                            </li>
+                            <li class="nav-item active border-start border-3 py-3 px-3">
+                                <a class="nav-link active text-info fw-500 p-0" href="#">Programs</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                                <a class="nav-link fw-500 p-0" href="#">Fitness classes</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                                <a class="nav-link fw-500 p-0" href="#">Kids&Families</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
+                                <a class="nav-link fw-500 p-0" href="#">Senior Zone</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                                <a class="nav-link fw-500 p-0" href="#">Membership</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                                <a class="nav-link fw-500 p-0" href="#">About</a>
+                            </li>
+                            <li class="nav-item border-start border-3 border-transparent py-3 px-3">
+                                <a class="nav-link fw-500 p-0" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body p-0 px-3">
-                    <button class="btn primary-btn w-100 mb-3">Sign in</button>
-                    <ul class="navbar-nav w-100">
-                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                            <a class="nav-link fw-500 p-0" href="#">Home</a>
+    
+                <!-- Navigation for desktop&tablet -->
+                <nav class="menu-bg overflow-hidden rounded-pill px-1 py-1 d-none d-lg-block">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">FACILITIES</a></li>
+                        <!-- program dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-bold dropdown-toggle nav-custom px-1.5" href="#" id="programsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PROGRAMS
+                            </a>
+                            <ul class="dropdown-menu rounded-4 border-0 shadow-lg p-2" aria-labelledby="programsDropdown">
+                                <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Fitness classes</a>
+                                </li>
+                                <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Kids & Families</a>
+                                </li>
+                                <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Senior Zone</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                            <a class="nav-link fw-500 p-0" href="#">Facilities</a>
-                        </li>
-                        <li class="nav-item active border-start border-3 py-3 px-3">
-                            <a class="nav-link active text-info fw-500 p-0" href="#">Programs</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                            <a class="nav-link fw-500 p-0" href="#">Fitness classes</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                            <a class="nav-link fw-500 p-0" href="#">Kids&Families</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 ps-5 pe-3">
-                            <a class="nav-link fw-500 p-0" href="#">Senior Zone</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                            <a class="nav-link fw-500 p-0" href="#">Membership</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                            <a class="nav-link fw-500 p-0" href="#">About</a>
-                        </li>
-                        <li class="nav-item border-start border-3 border-transparent py-3 px-3">
-                            <a class="nav-link fw-500 p-0" href="#">Blog</a>
-                        </li>
+    
+                        <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">MEMBERSHIP</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">VLOG</a></li>
                     </ul>
+                </nav>
+    
+                <div class="d-none d-lg-flex align-items-center">
+                    <a href="#" class="text-white text-decoration-none me-3">Français</a>
+                    <a href="#" class="btn btn-light rounded-pill px-4 py-2 nav-custom">Log in</a>
                 </div>
             </div>
+        </nav>
 
-            <!-- Navigation for desktop&tablet -->
-            <nav class="menu-bg overflow-hidden rounded-pill px-1 py-1 d-none d-lg-block">
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">FACILITIES</a></li>
-                    <!-- program dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link fw-bold dropdown-toggle nav-custom px-1.5" href="#" id="programsDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PROGRAMS
-                        </a>
-                        <ul class="dropdown-menu rounded-4 border-0 shadow-lg p-2" aria-labelledby="programsDropdown">
-                            <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Fitness classes</a>
-                            </li>
-                            <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Kids & Families</a>
-                            </li>
-                            <li><a class="dropdown-item rounded-3 py-2 nav-custom px-1" href="#">Senior Zone</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">MEMBERSHIP</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold nav-custom px-1.5" href="#">VLOG</a></li>
-                </ul>
-            </nav>
-
-            <div class="d-none d-lg-flex align-items-center">
-                <a href="#" class="text-white text-decoration-none me-3">Français</a>
-                <a href="#" class="btn btn-light rounded-pill px-4 py-2 nav-custom">Log in</a>
+        <!-- Banner img&content-->
+        <div role="banner" class="banner-section d-flex align-items-center w-100">
+            <!-- mobile -->
+            <div class="container-fluid px-4 position-relative z-2 banner-content d-lg-none">
+                <h1 class="text-white">Stay Active, Stay</h1>
+                <h1 class="text-white">Connected</h1>
+                <h1 class="text-white">Join a Class Today!</h1>
+                <button class="primary-btn mt-4">Book Now</button>
+            </div>
+            <!-- tablet&desktop -->
+            <div class="container-fluid px-5 position-relative z-2 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="text-white">Stay Active,</h1>
+                        <h1 class="text-white">Stay Connected</h1>
+                        <h1 class="text-white">Join a Class Today!</h1>
+                        <button class="primary-btn mt-4">Book Now</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-
-    <!-- Banner img&content-->
-    <section class="banner-section d-flex align-items-center w-100">
-        <!-- mobile -->
-        <div class="container-fluid px-4 position-relative z-2 banner-content d-lg-none">
-            <h1 class="text-white">Stay Active, Stay</h1>
-            <h1 class="text-white">Connected</h1>
-            <h1 class="text-white">Join a Class Today!</h1>
-            <button class="primary-btn mt-4">Book Now</button>
-        </div>
-        <!-- tablet&desktop -->
-        <div class="container-fluid px-5 position-relative z-2 d-none d-lg-block">
+    
+<main role="main">
+        <!------------- Schedule section ------------->
+        <div class="container mt-5" id="main-content">
             <div class="row">
-                <div class="col-lg-7">
-                    <h1 class="text-white">Stay Active,</h1>
-                    <h1 class="text-white">Stay Connected</h1>
-                    <h1 class="text-white">Join a Class Today!</h1>
-                    <button class="primary-btn mt-4">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!------------- Schedule section ------------->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center mb-4">
-                        <h1 class="mb-3"><span class="fw-semibold">Your</span> <span class="text-info">All-in-One
-                                Schedule</span> <span class="fw-semibold">at a Glance</span></h1>
-                        <button class="btn primary-btn">Book Now</button>
-                    </div>
-
-                    <!-- Calendar img&content for mobile-->
-                    <div class="schedule-filter mt-4 d-flex justify-content-between align-items-center d-lg-none">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle border rounded bg-white fw-medium px-4 py-2"
-                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                2025.03
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">2025.02</a></li>
-                                <li><a class="dropdown-item" href="#">2025.03</a></li>
-                                <li><a class="dropdown-item" href="#">2025.04</a></li>
-                            </ul>
+                <div class="col-12">
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center mb-4">
+                            <h1 class="mb-3"><span class="fw-semibold">Your</span> <span class="text-info">All-in-One
+                                    Schedule</span> <span class="fw-semibold">at a Glance</span></h1>
+                            <button class="btn primary-btn">Book Now</button>
                         </div>
-
-                        <div class="search-box">
-                            <input type="text" class="form-control rounded-pill px-3 py-2" style="width: 200px;"
-                                placeholder="Search">
-                        </div>
-                    </div>
-
-                    <div class="mt-4 d-lg-none">
-                        <div class="d-flex justify-content-between text-center">
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Sun</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">9</div>
+    
+                        <!-- Calendar img&content for mobile-->
+                        <div class="schedule-filter mt-4 d-flex justify-content-between align-items-center d-lg-none">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle border rounded bg-white fw-medium px-4 py-2"
+                                    type="button" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    2025.03
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">2025.02</a></li>
+                                    <li><a class="dropdown-item" href="#">2025.03</a></li>
+                                    <li><a class="dropdown-item" href="#">2025.04</a></li>
+                                </ul>
                             </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Mon</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">10</div>
-                            </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Tue</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">11</div>
-                            </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Wed</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">12</div>
-                            </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Thu</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">13</div>
-                            </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Fri</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
-                                    style="width: 36px; height: 36px;">14</div>
-                            </div>
-                            <div>
-                                <div class="text-secondary fs-6 mb-1">Sat</div>
-                                <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto rounded-circle text-info-bg text-white"
-                                    style="width: 36px; height: 36px;">15</div>
+    
+                            <div class="search-box">
+                                <input type="text" class="form-control rounded-pill px-3 py-2" style="width: 200px;"
+                                    placeholder="Search">
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mt-4 d-lg-none">
-                        <div class="d-flex pb-2">
-                            <div class="col-3 text-start">
-                                <p class="fw-bold semibold">Time</p>
-                            </div>
-                            <div class="col-9 text-start">
-                                <p class="fw-bold semibold">Schedules</p>
-                            </div>
-                        </div>
-
-                        <!-- Schedule Item 1 -->
-                        <div class="d-flex mb-4">
-                            <div class="col-3 text-secondary">
-                                <div class="fs-6 mb-1">9:00</div>
-                                <div class="fs-6">10:00</div>
-                            </div>
-                            <div class="col-9">
-                                <div class="fw-semibold fs-6 mb-1">Plates</div>
-                                <div class="text-secondary fs-6">Fitness Studio A</div>
-                            </div>
-                        </div>
-
-                        <!-- Schedule Item 2 -->
-                        <div class="d-flex mb-4">
-                            <div class="col-3 text-secondary">
-                                <div class="fs-6 mb-1">9:00</div>
-                                <div class="fs-6">10:00</div>
-                            </div>
-                            <div class="col-9">
-                                <div class="fw-semibold fs-6 mb-1">Gentle Yoga</div>
-                                <div class="text-secondary fs-6">Fitness Studio B</div>
-                            </div>
-                        </div>
-
-                        <!-- Schedule Item 3 -->
-                        <div class="d-flex mb-4">
-                            <div class="col-3 text-secondary">
-                                <div class="fs-6 mb-1">12:00</div>
-                                <div class="fs-6">13:00</div>
-                            </div>
-                            <div class="col-9">
-                                <div class="fw-semibold fs-6 mb-1">Zumba</div>
-                                <div class="text-secondary fs-6">Fitness Studio A</div>
+    
+                        <div class="mt-4 d-lg-none">
+                            <div class="d-flex justify-content-between text-center">
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Sun</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">9</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Mon</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">10</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Tue</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">11</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Wed</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">12</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Thu</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">13</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Fri</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto"
+                                        style="width: 36px; height: 36px;">14</div>
+                                </div>
+                                <div>
+                                    <div class="text-secondary fs-6 mb-1">Sat</div>
+                                    <div class="fs-5 fw-medium d-flex align-items-center justify-content-center mx-auto rounded-circle text-info-bg text-white"
+                                        style="width: 36px; height: 36px;">15</div>
+                                </div>
                             </div>
                         </div>
-
-                        <!-- Schedule Item 4 -->
-                        <div class="d-flex mb-4">
-                            <div class="col-3 text-secondary">
-                                <div class="fs-6 mb-1">16:00</div>
-                                <div class="fs-6">17:00</div>
+    
+                        <div class="mt-4 d-lg-none">
+                            <div class="d-flex pb-2">
+                                <div class="col-3 text-start">
+                                    <p class="fw-bold semibold">Time</p>
+                                </div>
+                                <div class="col-9 text-start">
+                                    <p class="fw-bold semibold">Schedules</p>
+                                </div>
                             </div>
-                            <div class="col-9">
-                                <div class="fw-semibold fs-6 mb-1">Jamboree (Moms & Toddlers)</div>
-                                <div class="text-secondary fs-6">Fitness Studio A</div>
+    
+                            <!-- Schedule Item 1 -->
+                            <div class="d-flex mb-4">
+                                <div class="col-3 text-secondary">
+                                    <div class="fs-6 mb-1">9:00</div>
+                                    <div class="fs-6">10:00</div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="fw-semibold fs-6 mb-1">Plates</div>
+                                    <div class="text-secondary fs-6">Fitness Studio A</div>
+                                </div>
+                            </div>
+    
+                            <!-- Schedule Item 2 -->
+                            <div class="d-flex mb-4">
+                                <div class="col-3 text-secondary">
+                                    <div class="fs-6 mb-1">9:00</div>
+                                    <div class="fs-6">10:00</div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="fw-semibold fs-6 mb-1">Gentle Yoga</div>
+                                    <div class="text-secondary fs-6">Fitness Studio B</div>
+                                </div>
+                            </div>
+    
+                            <!-- Schedule Item 3 -->
+                            <div class="d-flex mb-4">
+                                <div class="col-3 text-secondary">
+                                    <div class="fs-6 mb-1">12:00</div>
+                                    <div class="fs-6">13:00</div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="fw-semibold fs-6 mb-1">Zumba</div>
+                                    <div class="text-secondary fs-6">Fitness Studio A</div>
+                                </div>
+                            </div>
+    
+                            <!-- Schedule Item 4 -->
+                            <div class="d-flex mb-4">
+                                <div class="col-3 text-secondary">
+                                    <div class="fs-6 mb-1">16:00</div>
+                                    <div class="fs-6">17:00</div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="fw-semibold fs-6 mb-1">Jamboree (Moms & Toddlers)</div>
+                                    <div class="text-secondary fs-6">Fitness Studio A</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Calendar for desktop&tablet-->
-                    <div class="col-12">
-                        <!-- Desktop image (default) -->
-                        <img src="./images/desktop/homepage/schedule.png" alt="Schedule Calendar"
-                            class="img-fluid w-100 d-none d-lg-block">
-
-                        <!-- Tablet image -->
-                        <img src="./images/tablet/homepage/schedule.png" alt="Schedule Calendar"
-                            class="img-fluid w-100 d-none d-lg-none">
+    
+                        <!-- Calendar for desktop&tablet-->
+                        <div class="col-12">
+                            <!-- Desktop image (default) -->
+                            <img src="./images/desktop/homepage/schedule.png" alt="Schedule Calendar"
+                                class="img-fluid w-100 d-none d-lg-block">
+    
+                            <!-- Tablet image -->
+                            <img src="./images/tablet/homepage/schedule.png" alt="Schedule Calendar"
+                                class="img-fluid w-100 d-none d-lg-none">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!------------ Facilities section ------------>
-    <div data-aos="fade-up"
-    data-aos-duration="1000" class="container mt-5">
-        <!-- heading content -->
-        <div class="text-center mb-5">
-            <h1><span class="text-info">World-Class Facilities,</span> All in One Place</h1>
-            <p class="mt-3">
-                From ice rinks to fully equipped gyms, we've got it all.<br>
-                Whether you're into skating, strength training, or team sports, our state-of-the-art facilities provide
-                the perfect space for every passion.
-            </p>
-        </div>
-
-        <div class="position-relative">
-            <!-- Carousel -->
-            <div id="facilityCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
-                <!-- Control buttons -->
-                <div class="d-flex gap-2 position-absolute top-up end-0 z-1">
-                    <button class="btn p-0" type="button" data-bs-target="#facilityCarousel" data-bs-slide="prev">
-                        <span class="bg-dark bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="btn p-0" type="button" data-bs-target="#facilityCarousel" data-bs-slide="next">
-                        <span class="bg-dark bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row g-4">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="facility-card pool-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Pool</h2>
-                                        <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+    
+        <!------------ Facilities section ------------>
+        <div data-aos="fade-up"
+        data-aos-duration="1000" class="container mt-5">
+            <!-- heading content -->
+            <div class="text-center mb-5">
+                <h1><span class="text-info">World-Class Facilities,</span> All in One Place</h1>
+                <p class="mt-3">
+                    From ice rinks to fully equipped gyms, we've got it all.<br>
+                    Whether you're into skating, strength training, or team sports, our state-of-the-art facilities provide
+                    the perfect space for every passion.
+                </p>
+            </div>
+    
+            <div class="position-relative">
+                <!-- Carousel -->
+                <div id="facilityCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+                    <!-- Control buttons -->
+                    <div class="d-flex gap-2 position-absolute top-up end-0 z-1">
+                        <button class="btn p-0" type="button" role="button" data-bs-target="#facilityCarousel" data-bs-slide="prev">
+                            <span class="bg-dark bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="btn p-0" type="button" role="button" data-bs-target="#facilityCarousel" data-bs-slide="next">
+                            <span class="bg-dark bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+    
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="facility-card pool-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Pool</h2>
+                                            <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-md-6 col-lg-4 d-none d-md-block">
-                                <div class="facility-card ice-rink-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Ice Rink</h2>
-                                        <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                
+                                <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                    <div class="facility-card ice-rink-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Ice Rink</h2>
+                                            <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-4 d-none d-lg-block">
-                                <div class="facility-card gym-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Gym</h2>
-                                        <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="facility-card gym-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Gym</h2>
+                                            <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="facility-card ice-rink-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Ice Rink</h2>
-                                        <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="facility-card ice-rink-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Ice Rink</h2>
+                                            <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-md-6 col-lg-4 d-none d-md-block">
-                                <div class="facility-card gym-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Gym</h2>
-                                        <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                
+                                <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                    <div class="facility-card gym-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Gym</h2>
+                                            <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-4 d-none d-lg-block">
-                                <div class="facility-card fitness-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Fitness Studio</h2>
-                                        <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="facility-card fitness-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Fitness Studio</h2>
+                                            <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="facility-card gym-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Gym</h2>
-                                        <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6 col-lg-4 d-none d-md-block">
-                                <div class="facility-card fitness-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Fitness Studio</h2>
-                                        <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 d-none d-lg-block">
-                                <div class="facility-card pool-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Pool</h2>
-                                        <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Slide 4 -->
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="facility-card fitness-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Fitness Studio</h2>
-                                        <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="facility-card gym-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Gym</h2>
+                                            <p>Equipped with state-of-the-art machines and free weights to support all your fitness goals.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/treadmills-in-a-gym-390x390.png" alt="Modern gym with treadmills" class="img-fluid w-100 card-img-bottom">
                                         </div>
                                     </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                    <div class="facility-card fitness-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Fitness Studio</h2>
+                                            <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="facility-card pool-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Pool</h2>
+                                            <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="col-md-6 col-lg-4 d-none d-md-block">
-                                <div class="facility-card pool-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Pool</h2>
-                                        <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="facility-card fitness-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Fitness Studio</h2>
+                                            <p>Join group classes or train solo in our versatile studio designed for various workouts.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/yoga-pose-390x390.png" alt="Fitness studio with person doing yoga" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-4 d-none d-lg-block">
-                                <div class="facility-card ice-rink-card rounded-5">
-                                    <div class="p-4">
-                                        <h2>Ice Rink</h2>
-                                        <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
-                                        <div class="text-end mt-4">
-                                            <button class="secondary-btn">Learn More</button>
+                                
+                                <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                    <div class="facility-card pool-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Pool</h2>
+                                            <p>Enjoy a refreshing swim in our spacious pool, perfect for relaxation or exercise.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/swimming-pool-life-preserver.png" alt="Swimming pool with a life preserver" class="img-fluid w-100 card-img-bottom">
                                         </div>
                                     </div>
-                                    <div class="mt-3 overflow-hidden">
-                                        <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                </div>
+                                
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="facility-card ice-rink-card rounded-5">
+                                        <div class="p-4">
+                                            <h2>Ice Rink</h2>
+                                            <p>Glide across the ice in our well-maintained rink, ideal for skating enthusiasts of all levels.</p>
+                                            <div class="text-end mt-4">
+                                                <button class="secondary-btn">Learn More</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3 overflow-hidden">
+                                            <img src="./images/mobile/homepage/ice-hockey-game-390x390.png" alt="Ice skating rink with skater" class="img-fluid w-100 card-img-bottom">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -526,184 +534,184 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!------------ Inclusive section ------------>
-    <div data-aos="fade-up"
-    data-aos-duration="1000" class="container mt-5">
-        <!-- Header section -->
-        <div class="row mb-4">
-            <div class="col-lg-7 col-md-12">
-                <h1 class="mb-3">Fitness for All - <span class="text-info">Inclusive & Family-Friendly</span></h1>
-            </div>
-            <div class="col-lg-5 col-md-12">
-                <p>No matter your age, there's a place for you here. Our diverse range of programs is designed for kids, adults, and seniors, ensuring every family member finds an activity they love. Stay active together with family-friendly classes that bring everyone closer.</p>
-            </div>
-        </div>
-        <!-- card section -->
-        <div class="container-fluid p-0">
-            <div class="row g-3 g-md-4">
-              <!-- Left Column: Fitness Classes -->
-              <div class="col-6 col-md-6">
-                <div class="card border-0 h-100 inclusive-fitness rounded-5">
-                  <!-- Responsive images with different sources -->
-                  <img src="/images/desktop/homepage/group-doing-yoga.png" class="card-img-top d-none d-lg-block" alt="Fitness classes" class="card-img-top">
-                  <img src="/images/tablet/homepage/group-doing-yoga.png" class="card-img-top d-none d-md-block d-lg-none" alt="Fitness classes" class="card-img-top">
-                  <img src="/images/mobile/homepage/group-doing-yoga.png" class="d-md-none card-img h-100" alt="Fitness classes" class="card-img-top">
-                  
-                  <!-- Desktop/Tablet Text (below image) -->
-                  <div class="card-body p-4 d-none d-md-block">
-                    <div class="d-flex flex-column justify-content-around h-75">
-                        <h2 class="card-title">Fitness classes</h2>
-                        <p class="card-text">Stay active with a variety of instructor-led classes designed for all fitness levels. From high-intensity workouts to relaxing yoga sessions, there's something for everyone.</p>
-                        <button class="secondary-btn">Learn More</button>
-                    </div>
-                  </div>
-                  
-                  <!-- Mobile Text (overlay) -->
-                  <div class="card-img-overlay d-flex flex-column justify-content-end p-4 d-md-none">
-                    <h2 class="card-title text-white fs-4">Fitness classes</h2>
-                    <button class="secondary-btn">Learn More</button>
-                  </div>
+    
+        <!------------ Inclusive section ------------>
+        <div data-aos="fade-up"
+        data-aos-duration="1000" class="container mt-5">
+            <!-- Header section -->
+            <div class="row mb-4">
+                <div class="col-lg-7 col-md-12">
+                    <h1 class="mb-3">Fitness for All - <span class="text-info">Inclusive & Family-Friendly</span></h1>
                 </div>
-              </div>
-          
-              <!-- Right Column -->
-              <div class="col-6 col-md-6">
+                <div class="col-lg-5 col-md-12">
+                    <p>No matter your age, there's a place for you here. Our diverse range of programs is designed for kids, adults, and seniors, ensuring every family member finds an activity they love. Stay active together with family-friendly classes that bring everyone closer.</p>
+                </div>
+            </div>
+            <!-- card section -->
+            <div class="container-fluid p-0">
                 <div class="row g-3 g-md-4">
-                  <!-- Kids & Families Card -->
-                  <div class="col-12">
-                    <div class="card border-0 inclusive-kids rounded-5">
-                      <!-- Responsive images -->
-                      <img src="/images/desktop/homepage/family-gathering.png" class="card-img-top d-none d-lg-block" alt="Kids and families">
-                      <img src="/images/tablet/homepage/family-gathering.png" class="card-img-top d-none d-md-block d-lg-none" alt="Kids and families">
-                      <img src="/images/mobile/homepage/family-gathering.png" class="d-md-none card-img" alt="Kids and families">
+                  <!-- Left Column: Fitness Classes -->
+                  <div class="col-6 col-md-6">
+                    <div class="card border-0 h-100 inclusive-fitness rounded-5">
+                      <!-- Responsive images with different sources -->
+                      <img src="./images/desktop/homepage/group-doing-yoga.png" class="card-img-top d-none d-lg-block" alt="Fitness classes" class="card-img-top">
+                      <img src="./images/tablet/homepage/group-doing-yoga.png" class="card-img-top d-none d-md-block d-lg-none" alt="Fitness classes" class="card-img-top">
+                      <img src="./images/mobile/homepage/group-doing-yoga.png" class="d-md-none card-img h-100" alt="Fitness classes" class="card-img-top">
                       
-                      <!-- Desktop/Tablet Text -->
+                      <!-- Desktop/Tablet Text (below image) -->
                       <div class="card-body p-4 d-none d-md-block">
-                        <h2 class="card-title">Kids&families</h2>
-                        <p class="card-text">Fun and engaging activities for children and families to enjoy quality time together.</p>
-                        <button class="secondary-btn">Learn More</button>
+                        <div class="d-flex flex-column justify-content-around h-75">
+                            <h2 class="card-title">Fitness classes</h2>
+                            <p class="card-text">Stay active with a variety of instructor-led classes designed for all fitness levels. From high-intensity workouts to relaxing yoga sessions, there's something for everyone.</p>
+                            <button class="secondary-btn">Learn More</button>
+                        </div>
                       </div>
                       
-                      <!-- Mobile Text -->
+                      <!-- Mobile Text (overlay) -->
                       <div class="card-img-overlay d-flex flex-column justify-content-end p-4 d-md-none">
-                        <h2 class="card-title text-white fs-4">Kids& families</h2>
+                        <h2 class="card-title text-white fs-4">Fitness classes</h2>
                         <button class="secondary-btn">Learn More</button>
                       </div>
                     </div>
                   </div>
-          
-                  <!-- Senior Zone Card -->
-                  <div class="col-12 mt-3 mt-md-4">
-                    <div class="card border-0 inclusive-senior rounded-5">
-                      <!-- Responsive images -->
-                      <img src="/images/desktop/homepage/group-of-elderly-friends-eating-pizza.png" class="card-img-top d-none d-lg-block" alt="Senior zone">
-                      <img src="/images/tablet/homepage/group-of-elderly-friends-eating-pizza.png" class="card-img-top d-none d-md-block d-lg-none" alt="Senior zone">
-                      <img src="/images/mobile/homepage/group-of-elderly-friends-eating-pizza.png" class="d-md-none card-img" alt="Senior zone">
-                      
-                      <!-- Desktop/Tablet Text -->
-                      <div class="card-body p-4 d-none d-md-block">
-                        <h2 class="card-title">Senior zone</h2>
-                        <p class="card-text">A comfortable and safe space with tailored programs to support senior wellness and mobility.</p>
-                        <button class="secondary-btn">Learn More</button>
+              
+                  <!-- Right Column -->
+                  <div class="col-6 col-md-6">
+                    <div class="row g-3 g-md-4">
+                      <!-- Kids & Families Card -->
+                      <div class="col-12">
+                        <div class="card border-0 inclusive-kids rounded-5">
+                          <!-- Responsive images -->
+                          <img src="./images/desktop/homepage/family-gathering.png" class="card-img-top d-none d-lg-block" alt="Kids and families">
+                          <img src="./images/tablet/homepage/family-gathering.png" class="card-img-top d-none d-md-block d-lg-none" alt="Kids and families">
+                          <img src="./images/mobile/homepage/family-gathering.png" class="d-md-none card-img" alt="Kids and families">
+                          
+                          <!-- Desktop/Tablet Text -->
+                          <div class="card-body p-4 d-none d-md-block">
+                            <h2 class="card-title">Kids&families</h2>
+                            <p class="card-text">Fun and engaging activities for children and families to enjoy quality time together.</p>
+                            <button class="secondary-btn">Learn More</button>
+                          </div>
+                          
+                          <!-- Mobile Text -->
+                          <div class="card-img-overlay d-flex flex-column justify-content-end p-4 d-md-none">
+                            <h2 class="card-title text-white fs-4">Kids& families</h2>
+                            <button class="secondary-btn">Learn More</button>
+                          </div>
+                        </div>
                       </div>
-                      
-                      <!-- Mobile Text -->
-                      <div class="card-img-overlay d-flex flex-column justify-content-end p-4 d-md-none">
-                        <h2 class="card-title text-white fs-4">Senior zone</h2>
-                        <button class="secondary-btn">Learn More</button>
+              
+                      <!-- Senior Zone Card -->
+                      <div class="col-12 mt-3 mt-md-4">
+                        <div class="card border-0 inclusive-senior rounded-5">
+                          <!-- Responsive images -->
+                          <img src="./images/desktop/homepage/group-of-elderly-friends-eating-pizza.png" class="card-img-top d-none d-lg-block" alt="Senior zone">
+                          <img src="./images/tablet/homepage/group-of-elderly-friends-eating-pizza.png" class="card-img-top d-none d-md-block d-lg-none" alt="Senior zone">
+                          <img src="./images/mobile/homepage/group-of-elderly-friends-eating-pizza.png" class="d-md-none card-img" alt="Senior zone">
+                          
+                          <!-- Desktop/Tablet Text -->
+                          <div class="card-body p-4 d-none d-md-block">
+                            <h2 class="card-title">Senior zone</h2>
+                            <p class="card-text">A comfortable and safe space with tailored programs to support senior wellness and mobility.</p>
+                            <button class="secondary-btn">Learn More</button>
+                          </div>
+                          
+                          <!-- Mobile Text -->
+                          <div class="card-img-overlay d-flex flex-column justify-content-end p-4 d-md-none">
+                            <h2 class="card-title text-white fs-4">Senior zone</h2>
+                            <button class="secondary-btn">Learn More</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
         </div>
-    </div>
-
-    <!------------ Trusted section ------------>
-    <div data-aos="fade-up"
-    data-aos-duration="3000" class="container mt-5">
-        <div class="text-center mb-5">
-            <h1>Train with Confidence - Experts You Can <span class="text-info">Trust</span></h1>
-
-            <p class="mt-3">
-                Led by certified trainers, our programs ensure safe, science-backed guidance. With clear pricing,
-                skill levels, and real user reviews, you can choose the perfect class with confidence. No surprises,
-                just results.
-            </p>
+    
+        <!------------ Trusted section ------------>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="container mt-5">
+            <div class="text-center mb-5">
+                <h1>Train with Confidence - Experts You Can <span class="text-info">Trust</span></h1>
+    
+                <p class="mt-3">
+                    Led by certified trainers, our programs ensure safe, science-backed guidance. With clear pricing,
+                    skill levels, and real user reviews, you can choose the perfect class with confidence. No surprises,
+                    just results.
+                </p>
+            </div>
+    
+            <div class="text-center">
+                <!-- Desktop image (lg and up) -->
+                <img src="./images/desktop/homepage/trusted.svg"
+                    alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
+                    class="img-fluid d-none d-lg-inline">
+                    
+                <!-- Tablet image (md only) -->
+                <img src="./images/tablet/homepage/trusted.svg"
+                    alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
+                    class="img-fluid d-none d-md-inline d-lg-none">
+                    
+                <!-- Mobile image (default, hidden on md and up) -->
+                <img src="./images/mobile/homepage/trusted.svg"
+                    alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
+                    class="img-fluid d-md-none">
+            </div>
         </div>
-
-        <div class="text-center">
+    
+        <!------------ Comments section ------------>
+        <div data-aos="fade-up"
+        data-aos-duration="1000" class="container mt-5">
+            <!-- Header with title and Learn More button -->
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center mb-4">
+                <h1>Trusted by Our Community - <br>Hear Their Experience!</h1>
+                <a href="#" class="btn primary-btn">Learn More</a>
+            </div>
+    
+            <div class="text-center">
+                <!-- Desktop image (lg and up) -->
+                <img src="./images/desktop/homepage/comments.svg" alt="Customer testimonial" class="img-fluid d-none d-lg-inline">
+                    
+                <!-- Tablet image (md only) -->
+                <img src="./images/tablet/homepage/comments.svg"
+                    alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
+                    class="img-fluid d-none d-md-inline d-lg-none">
+                    
+                <!-- Mobile image (default, hidden on md and up) -->
+                <img src="./images/mobile/homepage/comments.svg"
+                    alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
+                    class="img-fluid d-md-none">
+            </div>
+        </div>
+    
+        <!------------ CTA section ------------>
+        <div  data-aos="fade-up"
+        data-aos-duration="1000" class="card text-white border-0 rounded-4 container mt-5">
             <!-- Desktop image (lg and up) -->
-            <img src="./images/desktop/homepage/trusted.svg"
-                alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
-                class="img-fluid d-none d-lg-inline">
-                
+            <img src="./images/desktop/homepage/woman-practicing-yoga.jpg.png" 
+                alt="Woman practicing yoga" 
+                class="card-img d-none d-lg-block">
+            
             <!-- Tablet image (md only) -->
-            <img src="./images/tablet/homepage/trusted.svg"
-                alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
-                class="img-fluid d-none d-md-inline d-lg-none">
-                
+            <img src="./images/tablet/homepage/woman-practicing-yoga.png" 
+                alt="Woman practicing yoga" 
+                class="card-img d-none d-md-block d-lg-none">
+            
             <!-- Mobile image (default, hidden on md and up) -->
-            <img src="./images/mobile/homepage/trusted.svg"
-                alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
-                class="img-fluid d-md-none">
+            <img src="./images/mobile/homepage/woman-practicing-yoga.png" 
+                alt="Woman practicing yoga" 
+                class="card-img d-md-none">
+            
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                <h1>Get 7 Days Free - No Risk, Just Results!</h1>
+                <a href="#" class="btn primary-btn">Join Now</a>
+            </div>
         </div>
-    </div>
+</main>
 
-    <!------------ Comments section ------------>
-    <div data-aos="fade-up"
-    data-aos-duration="1000" class="container mt-5">
-        <!-- Header with title and Learn More button -->
-        <div
-            class="d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center mb-4">
-            <h1>Trusted by Our Community - <br>Hear Their Experience!</h1>
-            <a href="#" class="btn primary-btn">Learn More</a>
-        </div>
-
-        <div class="text-center">
-            <!-- Desktop image (lg and up) -->
-            <img src="./images/desktop/homepage/comments.svg" alt="Customer testimonial" class="img-fluid d-none d-lg-inline">
-                
-            <!-- Tablet image (md only) -->
-            <img src="./images/tablet/homepage/comments.svg"
-                alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
-                class="img-fluid d-none d-md-inline d-lg-none">
-                
-            <!-- Mobile image (default, hidden on md and up) -->
-            <img src="./images/mobile/homepage/comments.svg"
-                alt="100% Certified Instructors, 100+ Specialized Courses, 10+ Years of Experience"
-                class="img-fluid d-md-none">
-        </div>
-    </div>
-
-    <!------------ CTA section ------------>
-    <div  data-aos="fade-up"
-    data-aos-duration="1000" class="card text-white border-0 rounded-4 container mt-5">
-        <!-- Desktop image (lg and up) -->
-        <img src="./images/desktop/homepage/woman-practicing-yoga.jpg.png" 
-            alt="Woman practicing yoga" 
-            class="card-img d-none d-lg-block">
-        
-        <!-- Tablet image (md only) -->
-        <img src="./images/tablet/homepage/woman-practicing-yoga.png" 
-            alt="Woman practicing yoga" 
-            class="card-img d-none d-md-block d-lg-none">
-        
-        <!-- Mobile image (default, hidden on md and up) -->
-        <img src="./images/mobile/homepage/woman-practicing-yoga.png" 
-            alt="Woman practicing yoga" 
-            class="card-img d-md-none">
-        
-        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-            <h1>Get 7 Days Free - No Risk, Just Results!</h1>
-            <a href="#" class="btn primary-btn">Join Now</a>
-        </div>
-    </div>
-
-    <!------------ Footer ------------>
+<footer role="contentinfo">
     <div class="container-fluid footer-bg container pt-1 pb-1">
         <!-- Newsletter Section -->
         <div class="row mb-5">
@@ -711,8 +719,9 @@
                 <p class="semibold mt-3 mb-3">Join Our Fitness Community - Tips, insights, and exclusive perks
                     straight to your inbox!</p>
                 <div class="d-flex mb-3 gap-2">
-                    <input type="email" class="form-control rounded-5" placeholder="Email">
-                    <button class="secondary-btn wv-100" type="button">Subscribe</button>
+                    <label for="email"></label>
+                    <input type="email" id="email" class="form-control rounded-5" placeholder="Email">
+                    <button class="secondary-btn wv-100" type="button" role="button" >Subscribe</button>
                 </div>
             </div>
         </div>
@@ -760,6 +769,8 @@
             </div>
         </div>
     </div>
+</footer>
+    
 
     <!-- no content below this line -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
